@@ -8,7 +8,7 @@ public class Address{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	int addressId;
+	Long addressId;
 	int houseNumber;
 	String street;
 	String city;
@@ -18,21 +18,14 @@ public class Address{
 	@OneToOne(cascade=CascadeType.ALL)
 	public Student student;
 	
-	public int getAddressId() {
+	public Address() {}
+	
+	public Long getAddressId() {
 		return addressId;
 	}
-	public void setAddressId(int addressId) {  
+	public void setAddressId(Long addressId) {  
 	        this.addressId = addressId;  
 	    }  
-	/*public Address(int houseNumber, String street,  String city,String state, int zipcode) {
-		
-		this.houseNumber = houseNumber;
-		this.street = street;
-		this.city = city;
-		this.state = state;
-		this.zipcode = zipcode;
-	
-	}*/
 	
 	public int getHouseNumber() {
 		return houseNumber;

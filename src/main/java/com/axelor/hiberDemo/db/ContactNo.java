@@ -5,22 +5,27 @@ import javax.persistence.*;
 public class ContactNo {
 	
 	@Id
-	int id;
-	int number;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	public ContactNo(int number) {
+	Long id;
+	
+	@Column(length=10)
+	Long number;
+	public ContactNo() {}
+	
+	public ContactNo(long number) {
 		this.number = number;
 	}
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
-	public int getNumber() {
+	public long getNumber() {
 		return number;
 	}
-	public void setNumber(int number) {
+	public void setNumber(long number) {
 		this.number = number;
 	}
 	

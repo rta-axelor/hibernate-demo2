@@ -12,7 +12,8 @@
         <class>com.axelor.hiberDemo.db.Student</class>
         <class>com.axelor.hiberDemo.db.Address</class>
         <class>com.axelor.hiberDemo.db.ContactNo</class>
-
+		 <class>com.axelor.hiberDemo.db.Email</class>
+		 <class>com.axelor.hiberDemo.db.Subject</class>
         <properties>
             <property name="javax.persistence.jdbc.driver"
                       value="org.postgresql.Driver" />
